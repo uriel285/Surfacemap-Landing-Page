@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer components {
+    .scale-up-center { animation: scale-up-center 0.4s; }
+    .slide-right { animation: slide-right 0.4s linear both; }
+    .slide-left { animation: slide-left 0.4s linear both; }
+    .blur-in { animation: blur-in 0.4s linear both; }
+    .scale-up-bottom { animation: scale-up-bottom 0.4s; }
+    .blink { animation: blinker 2s linear infinite; }
+  }
+  
+  @keyframes scale-up-center { 0% { transform: scale(.5); } 100% { transform: scale(1); } }
+  @keyframes slide-right { 100% { transform: translateX(0); } 0% { transform: translateX(100px); } }
+  @keyframes slide-left { 100% { transform: translateX(0); } 0% { transform: translateX(-100px); } }
+  @keyframes blur-in { 0% { filter: blur(12px); opacity: 0; } 100% { filter: blur(0); opacity: 1; } }
+  @keyframes scale-up-bottom { 0% { transform: scale(.5); transform-origin: center bottom; } 100% { transform: scale(1); transform-origin: center bottom; } }
+  @keyframes blinker { 0%, 30%, 50%, 100% { opacity: 1; } 20%, 40% { opacity: 0; } }
+  
+  @layer base {
+    body {
+      overflow-x: hidden;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  }
