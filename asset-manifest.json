@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Surfacemap-Landing-Page/static/css/main.4637b0de.css",
+    "main.js": "/Surfacemap-Landing-Page/static/js/main.7da2053f.js",
+    "static/js/453.8989f071.chunk.js": "/Surfacemap-Landing-Page/static/js/453.8989f071.chunk.js",
+    "static/media/logo.png": "/Surfacemap-Landing-Page/static/media/logo.cfe438091b80be55adbc.png",
+    "index.html": "/Surfacemap-Landing-Page/index.html",
+    "main.4637b0de.css.map": "/Surfacemap-Landing-Page/static/css/main.4637b0de.css.map",
+    "main.7da2053f.js.map": "/Surfacemap-Landing-Page/static/js/main.7da2053f.js.map",
+    "453.8989f071.chunk.js.map": "/Surfacemap-Landing-Page/static/js/453.8989f071.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4637b0de.css",
+    "static/js/main.7da2053f.js"
+  ]
+}
