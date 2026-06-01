@@ -25,7 +25,7 @@ export default function DocumentationSection() {
   
             <div className="flex flex-col gap-4 w-full lg:w-auto">
               <a
-                href="/docs"
+                href="https://uh-software.gitbook.io/surfacemap-docs"
                 className="px-8 py-4 rounded-2xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 font-semibold text-center"
               >
                 Open Documentation
