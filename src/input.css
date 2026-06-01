@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer components {
     .scale-up-center { animation: scale-up-center 0.4s; }
