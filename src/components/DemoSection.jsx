@@ -32,7 +32,7 @@ export default function DemoSection() {
               <h3 className="text-3xl font-bold mb-4">Demo Video Placeholder</h3>
   
               <p className="text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto leading-relaxed">
-                Replace this section with your embedded YouTube, Loom, or self-hosted product walkthrough.
+                 product walkthrough.
               </p>
             </div>
           </div>
