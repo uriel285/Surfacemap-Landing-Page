@@ -17,9 +17,8 @@ export default function DocumentationSection() {
               </h2>
   
               <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                Create a dedicated documentation portal with installation guides,
-                CLI references, GUI walkthroughs, scan examples, and automation
-                tutorials.
+                A dedicated documentation portal with installation guides,
+                CLI references, GUI walkthroughs and scan examples.
               </p>
             </div>
   
@@ -32,12 +31,12 @@ export default function DocumentationSection() {
               </a>
   
               <a
-                href="https://gumroad.com"
+                href="https://u285.gumroad.com/l/surfacemap"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 rounded-2xl border border-zinc-300 dark:border-zinc-700 font-semibold text-center"
               >
-                Buy License
+                Buy Product
               </a>
             </div>
           </div>

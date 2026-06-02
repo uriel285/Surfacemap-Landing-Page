@@ -1,7 +1,9 @@
 import { useVisible } from './hooks/useVisible';
+import { useState } from 'react';
 
 export default function DemoSection() {
   const [ref, isVisible] = useVisible();
+  const [play, setPlay] = useState(false);
 
     return (
       <section ref={ref} style={{visibility: isVisible ? 'visible' : 'hidden'}} id="demo" className={`py-28 border-t border-zinc-200 dark:border-zinc-900 ${ isVisible ? 'slide-left' : ''}`}>
@@ -22,21 +24,40 @@ export default function DemoSection() {
           </div>
   
           <div className="relative overflow-hidden rounded-[2rem] border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 aspect-video flex items-center justify-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-zinc-200/50 to-transparent dark:from-zinc-800/50" />
-  
-            <div className="relative z-10 text-center px-8">
-              <div className="w-24 h-24 rounded-full bg-white dark:bg-zinc-800 flex items-center justify-center mx-auto mb-8 shadow-2xl">
-                <div className="ml-1 w-0 h-0 border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent border-l-[22px] border-l-zinc-900 dark:border-l-white" />
+          {isVisible && !play && (
+            <button
+              onClick={() => setPlay(true)}
+              className="relative w-full h-full group"
+              aria-label="Play demo video"
+            >
+              <img
+                src="/demo-preview.webp"
+                alt="SurfaceMap demo preview"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center transition group-hover:bg-black/40">
+                <div className="w-24 h-24 rounded-full bg-white/95 flex items-center justify-center shadow-2xl">
+                  <div className="ml-1 w-0 h-0 border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent border-l-[22px] border-l-zinc-900" />
+                </div>
               </div>
-  
-              <h3 className="text-3xl font-bold mb-4">Demo Video Placeholder</h3>
-  
-              <p className="text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto leading-relaxed">
-                 product walkthrough.
-              </p>
-            </div>
-          </div>
+            </button>
+          )}
+
+          {isVisible && play && (
+            <video
+              className="w-full h-full object-cover"
+              controls
+              autoPlay
+              preload="none"
+              playsInline
+            >
+              <source src="/demo.mp4" type="video/mp4" />
+            </video>
+          )}
         </div>
+      </div>
       </section>
     );
   }

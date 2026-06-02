@@ -20,7 +20,7 @@ export default function CTASection() {
           </p>
   
           <a
-            href="https://gumroad.com"
+            href="https://u285.gumroad.com/l/surfacemap"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-10 py-5 rounded-2xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 font-bold text-xl hover:scale-[1.02] transition-transform"

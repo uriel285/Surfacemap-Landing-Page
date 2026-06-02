@@ -775,10 +775,6 @@ body {
   max-width: 620px;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -920,6 +916,10 @@ body {
   background-color: rgb(245 158 11 / 0.1);
 }
 
+.bg-black\/30 {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
 .bg-emerald-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
@@ -936,6 +936,10 @@ body {
 
 .bg-white\/70 {
   background-color: rgb(255 255 255 / 0.7);
+}
+
+.bg-white\/95 {
+  background-color: rgb(255 255 255 / 0.95);
 }
 
 .bg-zinc-100 {
@@ -957,10 +961,6 @@ body {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -968,12 +968,6 @@ body {
 .from-zinc-100 {
   --tw-gradient-from: #f4f4f5 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(244 244 245 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-zinc-200\/50 {
-  --tw-gradient-from: rgb(228 228 231 / 0.5) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(228 228 231 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -999,6 +993,10 @@ body {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.object-cover {
+  object-fit: cover;
 }
 
 .p-10 {
@@ -1092,11 +1090,6 @@ body {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -1230,6 +1223,14 @@ body {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-colors {
   transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
@@ -1356,6 +1357,10 @@ body {
   opacity: 0.9;
 }
 
+.group:hover .group-hover\:bg-black\/40 {
+  background-color: rgb(0 0 0 / 0.4);
+}
+
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1462,19 +1467,9 @@ body {
     border-color: rgb(24 24 27 / var(--tw-border-opacity, 1));
   }
 
-  .dark\:border-l-white {
-    --tw-border-opacity: 1;
-    border-left-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-  }
-
   .dark\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-  }
-
-  .dark\:bg-zinc-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
   }
 
   .dark\:bg-zinc-900 {
@@ -1498,12 +1493,6 @@ body {
   .dark\:from-white {
     --tw-gradient-from: #fff var(--tw-gradient-from-position);
     --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-
-  .dark\:from-zinc-800\/50 {
-    --tw-gradient-from: rgb(39 39 42 / 0.5) var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(39 39 42 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   }
 

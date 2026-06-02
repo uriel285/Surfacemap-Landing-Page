@@ -16,10 +16,10 @@ export default function Navbar() {
   
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
             <a href="#features" className="hover:text-zinc-500 transition-colors">Features</a>
-            <a href="https://uh-software.gitbook.io/surfacemap-docs" className="hover:text-zinc-500 transition-colors">Demo</a>
-            <a href="#docs" className="hover:text-zinc-500 transition-colors">Documentation</a>
+            <a href="#demo" className="hover:text-zinc-500 transition-colors">Demo</a>
+            <a href="https://uh-software.gitbook.io/surfacemap-docs" className="hover:text-zinc-500 transition-colors">Documentation</a>
             <a
-              href="https://gumroad.com"
+              href="https://u285.gumroad.com/l/surfacemap"
               target="_blank"
               className="px-5 py-2 rounded-xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 hover:opacity-90 transition-opacity"
             >

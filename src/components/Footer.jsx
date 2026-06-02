@@ -16,7 +16,7 @@ export default function Footer() {
             <a href="#demo" className="hover:text-zinc-900 dark:hover:text-white transition-colors">
               Demo
             </a>
-            <a href="/docs" className="hover:text-zinc-900 dark:hover:text-white transition-colors">
+            <a href="https://uh-software.gitbook.io/surfacemap-docs/" className="hover:text-zinc-900 dark:hover:text-white transition-colors">
               Docs
             </a>
           </div>

@@ -45,7 +45,7 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://gumroad.com"
+                href="https://u285.gumroad.com/l/surfacemap"
                 target="_blank"
                 className="px-8 py-4 rounded-2xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 font-semibold text-lg hover:scale-[1.02] transition-transform scale-up-bottom"
               >
