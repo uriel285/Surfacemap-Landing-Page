@@ -6,6 +6,7 @@ import UseCasesSection from './components/UseCasesSection';
 import DocumentationSection from './components/DocumentationSection';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
+import PromoPopup from './components/PromoPopup';
 import'./index.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <DocumentationSection />
         <CTASection />
       </main>
+      <PromoPopup />
       <Footer />
     </div>
   );
