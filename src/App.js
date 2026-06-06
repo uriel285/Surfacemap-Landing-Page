@@ -8,6 +8,7 @@ import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import PromoPopup from './components/PromoPopup';
 import'./index.css';
+import DiferencialSection from './components/DiferencialSection';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <main>
         <HeroSection />
+        <DiferencialSection/>
         <FeaturesSection />
         <DemoSection />
         <UseCasesSection />
